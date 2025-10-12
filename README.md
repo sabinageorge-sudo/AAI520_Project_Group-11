@@ -38,7 +38,8 @@ financial-agent/
 ## 🚀 Getting Started
 
 1. Clone the repository  
-2. Install dependencies:  
+2. Install dependencies:
+   ```bash 
    pip install -r requirements.txt
 
 ---
@@ -50,7 +51,6 @@ Once your .env file is set up and dependencies are installed, you can run the ag
 ## 🚀 Usage
 
 Run the orchestrator with any stock symbol:
- ```bash
   python orchestrator.py AAPL
 
 
