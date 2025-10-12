@@ -56,6 +56,7 @@ Run the orchestrator with any stock symbol:
    python orchestrator.py AAPL
 
 ---
+
 Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG).
 
 🧠 What Happens:
