@@ -25,6 +25,7 @@ This project builds an autonomous Investment Research Agent capable of analyzing
 - SEC EDGAR – Company filings (10-K, 10-Q)
 - Alpha Vantage (optional) – Technical indicators and global assets
 ## 🏗️ Project Structure
+<pre>
 financial-agent/
 ├── planner_agent.py         # Plans research steps
 ├── retriever_agent.py       # Retrieves financials, news, macro, filings
@@ -33,7 +34,7 @@ financial-agent/
 ├── orchestrator.py          # Coordinates the full workflow
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project documentation
-
+</pre>
 ## 🚀 Getting Started
 
 1. Clone the repository  
@@ -47,9 +48,13 @@ To securely use external APIs (like NewsAPI, FRED, etc.), create a .env file in 
 4.How to Run the Analysis
 Once your .env file is set up and dependencies are installed, you can run the agent from the command line:
 
-✅ Example Usage
-bash
+## 🚀 Usage
+
+Run the orchestrator with any stock symbol:
+
+```bash
 python orchestrator.py AAPL
+
 Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG).
 
 🧠 What Happens:
