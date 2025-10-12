@@ -48,14 +48,13 @@ To securely use external APIs (like NewsAPI, FRED, etc.), create a .env file in 
 4.How to Run the Analysis
 Once your .env file is set up and dependencies are installed, you can run the agent from the command line:
 
-🚀 Usage
+5.Usage
 Run the orchestrator with any stock symbol:
-
-
-python orchestrator.py AAPL
+   ```bash
+   python orchestrator.py AAPL
 
 ___
-Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG). This will trigger the full agent workflow: planning, retrieving data, analyzing insights, and saving the result.
+6.Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG). This will trigger the full agent workflow: planning, retrieving data, analyzing insights, and saving the result.
 🧠 What Happens:
 The planner agent creates a research plan
 
