@@ -35,7 +35,6 @@ financial-agent/
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project documentation
 </pre>
-```markdown
 ## 🚀 Getting Started
 
 ### Step 1: Clone the repository
