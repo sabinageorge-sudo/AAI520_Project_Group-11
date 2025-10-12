@@ -56,7 +56,7 @@ Run the orchestrator with any stock symbol:
 ___
 6. Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG). This will trigger the full agent workflow: planning, retrieving data, analyzing insights, and saving the result.
 
-##🧠 What Happens:
+## 🧠 What Happens:
 The planner agent creates a research plan
 
 The retriever agent fetches financials, news, macro data, and filings
