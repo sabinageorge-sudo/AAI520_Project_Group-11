@@ -1,0 +1,7 @@
+transformers
+torch
+yfinance
+newsapi-python
+fredapi
+sec-edgar-downloader
+python-dotenv
