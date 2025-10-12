@@ -48,11 +48,12 @@ To securely use external APIs (like NewsAPI, FRED, etc.), create a .env file in 
 4.How to Run the Analysis
 Once your .env file is set up and dependencies are installed, you can run the agent from the command line:
 
-## 🚀 Usage
+### 🚀 Usage
 
 Run the orchestrator with any stock symbol:
-  ```bash 
-  python orchestrator.py AAPL
+
+```bash
+python orchestrator.py AAPL
 
 ---
 Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG).
