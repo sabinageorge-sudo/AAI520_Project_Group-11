@@ -35,18 +35,24 @@ financial-agent/
 ├── requirements.txt         # Python dependencies
 └── README.md                # Project documentation
 </pre>
-🚀 Getting Started
-1. Clone the Repository
-bash
-git clone https://github.com/your-org/AAI520_Project_Group-11.git
-cd AAI520_Project_Group-11
+```markdown
+## 🚀 Getting Started
+
+### Step 1: Clone the repository
+<pre>
+```bash
+git clone https://github.com/your-org/project.git
+cd project
+<pre>
 2. Set Up the Environment
 Create and activate a virtual environment (optional but recommended):
 
-bash
+```bash
 python -m venv venv
 venv\Scripts\activate  # On Windows
+<pre>
 Install dependencies:
+
 
 bash
 pip install -r requirements.txt
