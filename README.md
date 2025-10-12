@@ -51,8 +51,10 @@ Once your .env file is set up and dependencies are installed, you can run the ag
 🚀 Usage
 Run the orchestrator with any stock symbol:
 
-bash
+
 python orchestrator.py AAPL
+
+___
 Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG). This will trigger the full agent workflow: planning, retrieving data, analyzing insights, and saving the result.
 🧠 What Happens:
 The planner agent creates a research plan
