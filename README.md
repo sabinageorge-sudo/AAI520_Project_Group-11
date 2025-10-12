@@ -37,39 +37,42 @@ financial-agent/
 </pre>
 ## 🚀 Getting Started
 
-### Step 1: Clone the repository
-<pre>
-```bash
+###  1: Clone the repository
+---
+bash
 git clone https://github.com/your-org/project.git
+
 cd project
-<pre>
-2. Set Up the Environment
+---
+
+### 2. Set Up the Environment
 Create and activate a virtual environment (optional but recommended):
-
-```bash
+---
+bash
 python -m venv venv
+
 venv\Scripts\activate  # On Windows
-<pre>
+---
 Install dependencies:
-
-
+---
 bash
 pip install -r requirements.txt
-3. Configure API Keys
+---
+### 3. Configure API Keys
 Create a .env file in the root directory with the following content:
-
+---
 Code
 NEWSAPI_KEY=your_newsapi_key
 FRED_API_KEY=your_fred_api_key
 ✅ These keys are required to fetch news and macroeconomic data.
-
-5. Usage:  
+---
+### 5. Usage:  
 Run the orchestrator with any stock symbol:
-   
+---  
    python orchestrator.py AAPL
 
 ___
-6. Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG). This will trigger the full agent workflow: planning, retrieving data, analyzing insights, and saving the result.
+Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG). This will trigger the full agent workflow: planning, retrieving data, analyzing insights, and saving the result.
 
 ## 🧠 What Happens:
 The planner agent creates a research plan
