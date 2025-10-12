@@ -7,9 +7,9 @@ This project builds an autonomous Investment Research Agent capable of analyzing
 
 | Name        | Role                        | Focus Area                          |
 |-------------|-----------------------------|--------------------------------------|
-| Senthil Arasu T | Planner agent      | Yahoo Finance, earnings, valuation   |
-| Smita Kasar | Retriever Agent    | NewsAPI/Kaggle, prompt chaining      |
-| Sabina George  | Analyzer Agent | Routing, memory, evaluator–optimizer |
+| Senthil Arasu T | Retriever Agent       | Yahoo Finance, earnings, valuation, NewsAPI/Kaggle, prompt chaining    |
+| Smita Kasar | Analyser Agent    | Summarizer, Tune summarization parameters, Test the Evaluator–Optimizer loop     |
+| Sabina George  | Orchestrator and Memory Agent | Ensure insights are saved, retrieved, and displayed correctly |
 ## 🧩 Key Features
 
 - **RetrievalQA**: Answers open-domain questions using grounded financial data
@@ -25,7 +25,15 @@ This project builds an autonomous Investment Research Agent capable of analyzing
 - SEC EDGAR – Company filings (10-K, 10-Q)
 - Alpha Vantage (optional) – Technical indicators and global assets
 ## 🏗️ Project Structure
-investment-research-agent/ │ ├── README.md # Project overview and instructions ├── requirements.txt # Python dependencies ├── data/ # Raw and processed datasets ├── notebooks/ # Exploratory notebooks by team members ├── src/ # Core source code │ ├── agent/ # Planning, routing, evaluation, memory │ ├── pipelines/ # Prompt chaining workflows │ ├── retrievers/ # FAISS or vector DB setup │ └── utils/ # Helpers and configs ├── tests/ # Unit tests and evaluation scripts └── docs/ # Architecture diagrams, team notes
+financial-agent/
+├── planner_agent.py         # Plans research steps
+├── retriever_agent.py       # Retrieves financials, news, macro, filings
+├── analyzer_agent.py        # Summarizes, evaluates, refines insights
+├── memory_agent.py          # Stores and retrieves past insights
+├── orchestrator.py          # Coordinates the full workflow
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
+
 ## 🚀 Getting Started
 
 1. Clone the repository  
@@ -34,6 +42,24 @@ investment-research-agent/ │ ├── README.md # Project overview and instru
    pip install -r requirements.txt
 
 ---
+3.API Key Setup (.env File)
+To securely use external APIs (like NewsAPI, FRED, etc.), create a .env file in the root of your project directory. This file stores your secret keys and keeps them out of your codebase.
+4.How to Run the Analysis
+Once your .env file is set up and dependencies are installed, you can run the agent from the command line:
+
+✅ Example Usage
+bash
+python orchestrator.py AAPL
+Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG).
+
+🧠 What Happens:
+The planner agent creates a research plan
+
+The retriever agent fetches financials, news, macro data, and filings
+
+The analyzer agent summarizes and evaluates the findings
+
+The memory agent stores the insight for future reference
 
 ### 🧪 Evaluation Criteria
 
@@ -50,17 +76,7 @@ investment-research-agent/ │ ├── README.md # Project overview and instru
 | 2    | Implement news pipeline + routing         |
 |     | Add evaluator–optimizer + memory          |
 | 3   | Final integration, testing, presentation  |
-## 🤝 Contributing
 
-We welcome contributions from all team members! To contribute:
-
-1. Fork the repository
-2. Create a new branch: `git checkout -b feature-name`
-3. Make your changes and commit: `git commit -m "Add feature"`
-4. Push to your branch: `git push origin feature-name`
-5. Open a pull request and describe your changes
-
-Please follow consistent naming conventions and comment your code clearly. Use the `/tests` folder to add unit tests for new modules.
 ## 📜 License
 
 This project is for academic and educational purposes only. All datasets and APIs used are publicly available under their respective licenses.
