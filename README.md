@@ -51,9 +51,8 @@ Once your .env file is set up and dependencies are installed, you can run the ag
 ## 🚀 Usage
 
 Run the orchestrator with any stock symbol:
-
-```bash
-python orchestrator.py AAPL
+ ```bash
+  python orchestrator.py AAPL
 
 ---
 Replace AAPL with any stock ticker symbol you want to analyze (e.g., TSLA, MSFT, GOOG).
