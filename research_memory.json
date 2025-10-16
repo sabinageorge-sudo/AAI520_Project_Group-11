@@ -70,17 +70,17 @@
         },
         "price_trend": {
             "trend": "Uptrend",
-            "percentage_change": 7.52,
-            "start_date": "2024-10-14 00:00:00-04:00",
-            "end_date": "2025-10-14 00:00:00-04:00",
-            "start_price": 230.228515625,
-            "end_price": 247.5500030517578
+            "percentage_change": 8.08,
+            "start_date": "2024-10-16 00:00:00-04:00",
+            "end_date": "2025-10-15 00:00:00-04:00",
+            "start_price": 230.70628356933594,
+            "end_price": 249.33999633789062
         },
         "key_metrics": {
-            "marketCap": 3673738444800,
-            "trailingPE": 37.56449,
-            "forwardPE": 29.78941,
-            "eps": 6.59,
+            "marketCap": 3700302807040,
+            "trailingPE": 37.893616,
+            "forwardPE": 30.004812,
+            "eps": 6.58,
             "beta": 1.094,
             "dividendYield": 0.42
         }
@@ -166,17 +166,17 @@
         },
         "price_trend": {
             "trend": "Uptrend",
-            "percentage_change": 23.48,
-            "start_date": "2024-10-14 00:00:00-04:00",
-            "end_date": "2025-10-14 00:00:00-04:00",
-            "start_price": 416.01678466796875,
-            "end_price": 513.70849609375
+            "percentage_change": 24.31,
+            "start_date": "2024-10-16 00:00:00-04:00",
+            "end_date": "2025-10-15 00:00:00-04:00",
+            "start_price": 413.01922607421875,
+            "end_price": 513.4299926757812
         },
         "key_metrics": {
-            "marketCap": 3818480730112,
-            "trailingPE": 37.717216,
-            "forwardPE": 34.361774,
-            "eps": 13.62,
+            "marketCap": 3816410578944,
+            "trailingPE": 37.586384,
+            "forwardPE": 34.343143,
+            "eps": 13.66,
             "beta": 1.023,
             "dividendYield": 0.71
         }
@@ -267,16 +267,16 @@
         },
         "price_trend": {
             "trend": "Uptrend",
-            "percentage_change": 96.92,
-            "start_date": "2024-10-14 00:00:00-04:00",
-            "end_date": "2025-10-14 00:00:00-04:00",
-            "start_price": 219.16000366210938,
-            "end_price": 431.5700988769531
+            "percentage_change": 96.61,
+            "start_date": "2024-10-16 00:00:00-04:00",
+            "end_date": "2025-10-15 00:00:00-04:00",
+            "start_price": 221.3300018310547,
+            "end_price": 435.1499938964844
         },
         "key_metrics": {
-            "marketCap": 1435208384512,
-            "trailingPE": 253.8953,
-            "forwardPE": 133.21667,
+            "marketCap": 1446939459584,
+            "trailingPE": 255.97058,
+            "forwardPE": 134.30556,
             "eps": 1.7,
             "beta": 2.086,
             "dividendYield": null
