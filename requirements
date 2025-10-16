@@ -5,3 +5,6 @@ newsapi-python
 fredapi
 sec-edgar-downloader
 python-dotenv
+requests
+pandas
+numpy

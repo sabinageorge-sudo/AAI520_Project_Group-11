@@ -1,53 +1,42 @@
-# 🚀 Main Orchestrator
-# This agent coordinates all other agents to perform a full analysis.
+from retriever_agent import retrieve_all_data
+from analyzer_agent import analyze_data
+from memory_agent import MemoryAgent  # ensure this exists
+from datetime import datetime
 
-# Make sure all previous cells (planner, retriever, analyzer, memory) are run first
+def print_insights(insights):
+    """
+    Nicely format and print company insights.
+    """
+    print(f"\n📈 Insights for {insights.get('company', 'Unknown')}:")
+    print("-" * 50)
 
+    # Metrics
+    for key in ["marketCap", "beta", "trailingPE", "forwardPE", "eps", "dividendYield"]:
+        value = insights.get(key, "N/A")
+        if isinstance(value, float):
+            value = round(value, 2)
+        print(f"{key}: {value}")
 
-import sys
-from planner_agent import plan_research
-from retriever_agent import get_financial_data, get_news, get_macro_data, get_sec_filings
-from analyzer_agent import summarize_findings, evaluate_quality, refine_summary
-from memory_agent import save_insight, get_insight
-def run_analysis(symbol):
-        print(f"\n🔎 Starting analysis for {symbol}")
-    
-        steps = plan_research(symbol)
-        print("\n🧭 Planned Steps:")
-        for step in steps:
-            print(" -", step)
-    
-        print("\n📊 Retrieving Data...")
-        info, financials = get_financial_data(symbol)
-        news = get_news(symbol)
-        macro = get_macro_data()
-        filings = get_sec_filings(symbol)
-    
-        context = f"""
-        Company Info: {info}
-        Financials: {financials}
-        News Headlines: {[article['title'] for article in news[:2]]}
-        Macro Data: {macro}
-        Filings: {filings}
-        """
+    # Price trend
+    print(f"\nTrend: {insights.get('trend', 'N/A')}")
+    print(f"Price change (%): {insights.get('price_change_%', 'N/A')}")
+    print(f"Start price: {insights.get('start_price', 'N/A')}")
+    print(f"End price: {insights.get('end_price', 'N/A')}")
 
-        summary = summarize_findings(context, symbol)
-        score = evaluate_quality(summary)
-    
-  
-        save_insight(symbol, summary)
-    
-   
-        print("\n📝 Summary:\n", summary)
-        print("\n📈 Evaluation:", score)
-        print("\n💾 Insight saved for future runs.")
-        print("\n🔁 Previous Insight:", get_insight(symbol))
+    # Timestamp
+    print(f"\nTimestamp: {datetime.now().isoformat()}")
+    print("=" * 50)
 
-   
+def main():
+    tickers = ["AAPL", "MSFT", "TSLA"]
+    memory = MemoryAgent()  # initialize memory
+
+    for ticker in tickers:
+        print(f"\n--- Researching {ticker} ---")
+        retrieved = retrieve_all_data(ticker)
+        insights = analyze_data(retrieved)
+        memory.store_insights(ticker, insights)
+        print_insights(insights)
+
 if __name__ == "__main__":
-
-        if len(sys.argv) < 2:
-            print("Usage: python orchestrator.py <STOCK_SYMBOL>")
-        else:
-            run_analysis(sys.argv[1])
- 
+    main()

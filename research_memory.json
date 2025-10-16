@@ -1,0 +1,285 @@
+{
+    "AAPL": {
+        "financial_summary": {
+            "income_statement": {
+                "2024-09-30 00:00:00": {
+                    "Tax Effect Of Unusual Items": 0.0,
+                    "Tax Rate For Calcs": 0.241,
+                    "Normalized EBITDA": 134661000000.0
+                },
+                "2023-09-30 00:00:00": {
+                    "Tax Effect Of Unusual Items": 0.0,
+                    "Tax Rate For Calcs": 0.147,
+                    "Normalized EBITDA": 125820000000.0
+                },
+                "2022-09-30 00:00:00": {
+                    "Tax Effect Of Unusual Items": 0.0,
+                    "Tax Rate For Calcs": 0.162,
+                    "Normalized EBITDA": 130541000000.0
+                },
+                "2021-09-30 00:00:00": {
+                    "Tax Effect Of Unusual Items": 0.0,
+                    "Tax Rate For Calcs": 0.133,
+                    "Normalized EBITDA": 123136000000.0
+                }
+            },
+            "balance_sheet": {
+                "2024-09-30 00:00:00": {
+                    "Treasury Shares Number": NaN,
+                    "Ordinary Shares Number": 15116786000.0,
+                    "Share Issued": 15116786000.0
+                },
+                "2023-09-30 00:00:00": {
+                    "Treasury Shares Number": 0.0,
+                    "Ordinary Shares Number": 15550061000.0,
+                    "Share Issued": 15550061000.0
+                },
+                "2022-09-30 00:00:00": {
+                    "Treasury Shares Number": NaN,
+                    "Ordinary Shares Number": 15943425000.0,
+                    "Share Issued": 15943425000.0
+                },
+                "2021-09-30 00:00:00": {
+                    "Treasury Shares Number": NaN,
+                    "Ordinary Shares Number": 16426786000.0,
+                    "Share Issued": 16426786000.0
+                }
+            },
+            "cash_flow": {
+                "2024-09-30 00:00:00": {
+                    "Free Cash Flow": 108807000000.0,
+                    "Repurchase Of Capital Stock": -94949000000.0,
+                    "Repayment Of Debt": -9958000000.0
+                },
+                "2023-09-30 00:00:00": {
+                    "Free Cash Flow": 99584000000.0,
+                    "Repurchase Of Capital Stock": -77550000000.0,
+                    "Repayment Of Debt": -11151000000.0
+                },
+                "2022-09-30 00:00:00": {
+                    "Free Cash Flow": 111443000000.0,
+                    "Repurchase Of Capital Stock": -89402000000.0,
+                    "Repayment Of Debt": -9543000000.0
+                },
+                "2021-09-30 00:00:00": {
+                    "Free Cash Flow": 92953000000.0,
+                    "Repurchase Of Capital Stock": -85971000000.0,
+                    "Repayment Of Debt": -8750000000.0
+                }
+            }
+        },
+        "price_trend": {
+            "trend": "Uptrend",
+            "percentage_change": 8.08,
+            "start_date": "2024-10-16 00:00:00-04:00",
+            "end_date": "2025-10-15 00:00:00-04:00",
+            "start_price": 230.70628356933594,
+            "end_price": 249.33999633789062
+        },
+        "key_metrics": {
+            "marketCap": 3700302807040,
+            "trailingPE": 37.893616,
+            "forwardPE": 30.004812,
+            "eps": 6.58,
+            "beta": 1.094,
+            "dividendYield": 0.42
+        }
+    },
+    "MSFT": {
+        "financial_summary": {
+            "income_statement": {
+                "2025-06-30 00:00:00": {
+                    "Tax Effect Of Unusual Items": -77088000.0,
+                    "Tax Rate For Calcs": 0.176,
+                    "Normalized EBITDA": 160603000000.0
+                },
+                "2024-06-30 00:00:00": {
+                    "Tax Effect Of Unusual Items": -99918000.0,
+                    "Tax Rate For Calcs": 0.182,
+                    "Normalized EBITDA": 133558000000.0
+                },
+                "2023-06-30 00:00:00": {
+                    "Tax Effect Of Unusual Items": -2850000.0,
+                    "Tax Rate For Calcs": 0.19,
+                    "Normalized EBITDA": 105155000000.0
+                },
+                "2022-06-30 00:00:00": {
+                    "Tax Effect Of Unusual Items": 43754000.0,
+                    "Tax Rate For Calcs": 0.131,
+                    "Normalized EBITDA": 99905000000.0
+                }
+            },
+            "balance_sheet": {
+                "2025-06-30 00:00:00": {
+                    "Ordinary Shares Number": 7434000000.0,
+                    "Share Issued": 7434000000.0,
+                    "Net Debt": 12909000000.0
+                },
+                "2024-06-30 00:00:00": {
+                    "Ordinary Shares Number": 7434138859.0,
+                    "Share Issued": 7434138859.0,
+                    "Net Debt": 33315000000.0
+                },
+                "2023-06-30 00:00:00": {
+                    "Ordinary Shares Number": 7432000000.0,
+                    "Share Issued": 7432000000.0,
+                    "Net Debt": 12533000000.0
+                },
+                "2022-06-30 00:00:00": {
+                    "Ordinary Shares Number": 7464000000.0,
+                    "Share Issued": 7464000000.0,
+                    "Net Debt": 35850000000.0
+                },
+                "2021-06-30 00:00:00": {
+                    "Ordinary Shares Number": NaN,
+                    "Share Issued": NaN,
+                    "Net Debt": NaN
+                }
+            },
+            "cash_flow": {
+                "2025-06-30 00:00:00": {
+                    "Free Cash Flow": 71611000000.0,
+                    "Repurchase Of Capital Stock": -18420000000.0,
+                    "Repayment Of Debt": -3216000000.0
+                },
+                "2024-06-30 00:00:00": {
+                    "Free Cash Flow": 74071000000.0,
+                    "Repurchase Of Capital Stock": -17254000000.0,
+                    "Repayment Of Debt": -29070000000.0
+                },
+                "2023-06-30 00:00:00": {
+                    "Free Cash Flow": 59475000000.0,
+                    "Repurchase Of Capital Stock": -22245000000.0,
+                    "Repayment Of Debt": -2750000000.0
+                },
+                "2022-06-30 00:00:00": {
+                    "Free Cash Flow": 65149000000.0,
+                    "Repurchase Of Capital Stock": -32696000000.0,
+                    "Repayment Of Debt": -9023000000.0
+                },
+                "2021-06-30 00:00:00": {
+                    "Free Cash Flow": NaN,
+                    "Repurchase Of Capital Stock": NaN,
+                    "Repayment Of Debt": NaN
+                }
+            }
+        },
+        "price_trend": {
+            "trend": "Uptrend",
+            "percentage_change": 24.31,
+            "start_date": "2024-10-16 00:00:00-04:00",
+            "end_date": "2025-10-15 00:00:00-04:00",
+            "start_price": 413.01922607421875,
+            "end_price": 513.4299926757812
+        },
+        "key_metrics": {
+            "marketCap": 3816410578944,
+            "trailingPE": 37.586384,
+            "forwardPE": 34.343143,
+            "eps": 13.66,
+            "beta": 1.023,
+            "dividendYield": 0.71
+        }
+    },
+    "TSLA": {
+        "financial_summary": {
+            "income_statement": {
+                "2024-12-31 00:00:00": {
+                    "Tax Effect Of Unusual Items": -136800000.0,
+                    "Tax Rate For Calcs": 0.2,
+                    "Normalized EBITDA": 15392000000.0
+                },
+                "2023-12-31 00:00:00": {
+                    "Tax Effect Of Unusual Items": 0.0,
+                    "Tax Rate For Calcs": 0.21,
+                    "Normalized EBITDA": 14796000000.0
+                },
+                "2022-12-31 00:00:00": {
+                    "Tax Effect Of Unusual Items": -14080000.0,
+                    "Tax Rate For Calcs": 0.08,
+                    "Normalized EBITDA": 17833000000.0
+                },
+                "2021-12-31 00:00:00": {
+                    "Tax Effect Of Unusual Items": 2970000.0,
+                    "Tax Rate For Calcs": 0.11,
+                    "Normalized EBITDA": 9598000000.0
+                },
+                "2020-12-31 00:00:00": {
+                    "Tax Effect Of Unusual Items": NaN,
+                    "Tax Rate For Calcs": NaN,
+                    "Normalized EBITDA": NaN
+                }
+            },
+            "balance_sheet": {
+                "2024-12-31 00:00:00": {
+                    "Treasury Shares Number": NaN,
+                    "Ordinary Shares Number": 3216000000.0,
+                    "Share Issued": 3216000000.0
+                },
+                "2023-12-31 00:00:00": {
+                    "Treasury Shares Number": 0.0,
+                    "Ordinary Shares Number": 3185000000.0,
+                    "Share Issued": 3185000000.0
+                },
+                "2022-12-31 00:00:00": {
+                    "Treasury Shares Number": NaN,
+                    "Ordinary Shares Number": 3164000000.0,
+                    "Share Issued": 3164000000.0
+                },
+                "2021-12-31 00:00:00": {
+                    "Treasury Shares Number": NaN,
+                    "Ordinary Shares Number": 3099000000.0,
+                    "Share Issued": 3099000000.0
+                },
+                "2020-12-31 00:00:00": {
+                    "Treasury Shares Number": NaN,
+                    "Ordinary Shares Number": NaN,
+                    "Share Issued": NaN
+                }
+            },
+            "cash_flow": {
+                "2024-12-31 00:00:00": {
+                    "Free Cash Flow": 3581000000.0,
+                    "Repayment Of Debt": -2881000000.0,
+                    "Issuance Of Debt": 5744000000.0
+                },
+                "2023-12-31 00:00:00": {
+                    "Free Cash Flow": 4357000000.0,
+                    "Repayment Of Debt": -1815000000.0,
+                    "Issuance Of Debt": 3931000000.0
+                },
+                "2022-12-31 00:00:00": {
+                    "Free Cash Flow": 7552000000.0,
+                    "Repayment Of Debt": -3866000000.0,
+                    "Issuance Of Debt": 0.0
+                },
+                "2021-12-31 00:00:00": {
+                    "Free Cash Flow": 3483000000.0,
+                    "Repayment Of Debt": -14615000000.0,
+                    "Issuance Of Debt": 8883000000.0
+                },
+                "2020-12-31 00:00:00": {
+                    "Free Cash Flow": NaN,
+                    "Repayment Of Debt": NaN,
+                    "Issuance Of Debt": NaN
+                }
+            }
+        },
+        "price_trend": {
+            "trend": "Uptrend",
+            "percentage_change": 96.61,
+            "start_date": "2024-10-16 00:00:00-04:00",
+            "end_date": "2025-10-15 00:00:00-04:00",
+            "start_price": 221.3300018310547,
+            "end_price": 435.1499938964844
+        },
+        "key_metrics": {
+            "marketCap": 1446939459584,
+            "trailingPE": 255.97058,
+            "forwardPE": 134.30556,
+            "eps": 1.7,
+            "beta": 2.086,
+            "dividendYield": null
+        }
+    }
+}

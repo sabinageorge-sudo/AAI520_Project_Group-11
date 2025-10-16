@@ -1,22 +1,29 @@
 import json
+import os
+from datetime import datetime
 
-memory = {}
+class MemoryAgent:
+    def __init__(self, file_path="memory.json"):
+        self.file_path = file_path
+        self.memory = self.load_memory()
 
-def save_insight(symbol, insight):
-    memory[symbol] = insight
-    save_to_file()
+    def load_memory(self):
+        if os.path.exists(self.file_path):
+            with open(self.file_path, "r") as f:
+                try:
+                    return json.load(f)
+                except json.JSONDecodeError:
+                    return {}
+        return {}
 
-def get_insight(symbol):
-    return memory.get(symbol, "No prior insight available.")
+    def save_memory(self):
+        with open(self.file_path, "w") as f:
+            json.dump(self.memory, f, indent=4)
 
-def save_to_file():
-    with open("memory.json", "w") as f:
-        json.dump(memory, f)
+    def store_insights(self, company, insights):
+        insights["timestamp"] = datetime.now().isoformat()
+        self.memory[company] = insights
+        self.save_memory()
 
-def load_from_file():
-    global memory
-    try:
-        with open("memory.json", "r") as f:
-            memory = json.load(f)
-    except FileNotFoundError:
-        memory = {}
+    def get_insights(self, company):
+        return self.memory.get(company, None)
