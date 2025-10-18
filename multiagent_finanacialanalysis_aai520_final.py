@@ -27,14 +27,13 @@ import re # For SEC parsing
 
 # --- API Keys and Environment Variables ---
 
-NEWS_API_KEY = os.getenv("NEWS_API_KEY", "3bf382caa5c24420a03b370cb20f314f")
+NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 
 #OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-YOUR_VALID_OPENAI_API_KEY_HERE") # Placeholder for a valid key
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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") # Placeholder for a valid key
-
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # FRED API Key (for Federal Reserve Economic Data)
-FRED_API_KEY = os.getenv("FRED_API_KEY", "da9ab795d36c41a0891e69dd4d023fd2")
+FRED_API_KEY = os.getenv("FRED_API_KEY")
 
 
 # --- LLM Initialization ---
