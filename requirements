@@ -5,3 +5,11 @@ newsapi-python
 fredapi
 sec-edgar-downloader
 python-dotenv
+requests
+langchain
+langchain-core
+langchain-community
+langchain-huggingface
+langchain-openai
+faiss-cpu
+tiktoken
