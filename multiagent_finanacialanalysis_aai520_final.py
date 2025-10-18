@@ -1,7 +1,5 @@
-# -*- coding: utf-8 -*-
-"""MultiAgent_FinanacialAnalysis_AAI520_Final.ipynb
+"""MultiAgent_FinanacialAnalysis_AAI520
 
-"""
 
 import os
 import requests
