@@ -79,7 +79,7 @@ def fetch_financial_news(NEWS_API_KEY, query="finance OR stock market OR economy
     end_date = datetime.now()
     start_date = end_date - timedelta(days=days_ago)
 
-    url = f"https://newsapi.org/v2/everything?q={query}&language={language}&sortBy=publishedAt&pageSize={page_size}&from={start_date.isoformat()}&to={end_date.isoformat()}&apiKey={api_key}"
+    url = f"https://newsapi.org/v2/everything?q={query}&language={language}&sortBy=publishedAt&pageSize={page_size}&from={start_date.isoformat()}&to={end_date.isoformat()}&apiKey={NEWS_API_KEY}"
 
     print(f"Attempting to fetch news from NewsAPI.org for query: '{query}'...")
     try:
