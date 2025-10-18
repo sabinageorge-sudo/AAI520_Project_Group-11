@@ -56,7 +56,7 @@ if llm is None:
 #    - Function to fetch financial news from NewsAPI.org
 # ==============================================================================
 
-def fetch_financial_news(api_key, query="finance OR stock market OR economy", language="en", page_size=50, days_ago=7):
+def fetch_financial_news(NEWS_API_KEY, query="finance OR stock market OR economy", language="en", page_size=50, days_ago=7):
     """
     Fetches financial news articles from NewsAPI.org.
     Includes a dummy data fallback if the API key is missing or invalid.
