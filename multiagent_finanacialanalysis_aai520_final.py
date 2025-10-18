@@ -29,10 +29,8 @@ import re # For SEC parsing
 
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 
-#OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-YOUR_VALID_OPENAI_API_KEY_HERE") # Placeholder for a valid key
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-# FRED API Key (for Federal Reserve Economic Data)
 FRED_API_KEY = os.getenv("FRED_API_KEY")
 
 
