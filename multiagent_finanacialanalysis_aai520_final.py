@@ -1,5 +1,5 @@
 """MultiAgent_FinanacialAnalysis_AAI520
-
+"""
 
 import os
 import requests
